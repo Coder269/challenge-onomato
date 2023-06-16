@@ -1,0 +1,16 @@
+<form #form="ngForm" (ngSubmit)="createOnomatopia(form)">
+  <fieldset>
+    <label for="creer">Créer une onomatopée:</label>
+    <input
+      id="creerInput"
+      type="text"
+      ngModel
+      name="creerInput"
+      #creerInput="ngModel"
+    />
+  </fieldset>
+  <br>
+  <div style="text-align: center;">
+  <button type="submit">Submit</button>
+</div>
+</form>
